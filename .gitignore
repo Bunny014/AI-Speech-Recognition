@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+.venv/
+venv/
+
+# VS Code
+.vscode/
+
+# Uploaded Audio Files
+uploads/
+
+# Output Files
+outputs/
+
+# macOS
+.DS_Store

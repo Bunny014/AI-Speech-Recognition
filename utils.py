@@ -1,0 +1,13 @@
+import os
+
+def save_uploaded_file(uploaded_file):
+    file_path = os.path.join("uploads", uploaded_file.name)
+    
+    with open(file_path, "wb") as f:
+      f.write(uploaded_file.getbuffer())
+       
+    return file_path
+def save_transcript(text):
+    file_path = os.path.join("outputs", "transcription.txt")
+    with open(file_path, "w", encoding="utf-8") as f:
+        f.write(text)
